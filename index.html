@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<head>
+	<title>
+		Pipeline Interface
+	</title>
+	<script type="text/javascript" src="./index.js"></script>
+	<script type="text/javascript">
+		function sendMessages(){
+			let n = document.getElementById("num-msgs").value;
+			if(n <= 0){
+				console.log("Input error");
+				return ;
+			}
+
+			sendMessageBatch(n);
+		}
+	</script>
+</head>
+<body>
+	<input id="num-msgs" type="number">
+	<button onClick="sendMessages();">Send Batch</button>
+</body>
